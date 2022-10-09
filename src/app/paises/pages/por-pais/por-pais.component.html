@@ -1,1 +1,43 @@
-<p>por-pais works!</p>
+<h2>Por Pais</h2>
+<hr />
+
+<div class="row">
+  <div class="col">
+    <form (ngSubmit)="buscar()">
+      <input
+        type="text"
+        name="termino"
+        placeholder="por pais"
+        class="form-control"
+        [(ngModel)]="termino"
+        autocomplete="off"
+      />
+    </form>
+  </div>
+</div>
+
+<hr />
+<div class="alert alert-danger">No se encontro nada con el termino ANDN</div>
+
+<div class="row">
+  <div class="col">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Bandera</th>
+          <th>Nombre</th>
+          <th>Poblacion</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <td>1</td>
+        <td>bandera</td>
+        <td>nombre</td>
+        <td>4555656</td>
+        <td><a href="/pais/cri">ver....</a></td>
+      </tbody>
+    </table>
+  </div>
+</div>
