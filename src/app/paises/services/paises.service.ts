@@ -21,5 +21,9 @@ export class PaisesService {
         //   catchError(err => of(['Hola Mundo']))
         // );
   }
+  buscarCapital(termino: string): Observable<Country[]> {
+    const url = `${this.apiURL}/capital/${termino}`
+    return this.http.get<Country[]>(url);
+  }
 
 }
